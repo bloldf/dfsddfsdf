@@ -3649,7 +3649,6 @@ reaction2.on("collect", r => {
       :key:***__اوامر ادارية__***:crown: 
 **
 『-bans ====> الاعضاء المبندين من سيرفرك
-『-setmember ====> لعمل روم صوتي بعدد اعضاء السيرفر
 『-leave ====> لطرد البوت من سيرفرك
 『-server ====> يعرض لك معلومات عن السيرفر
 『-movall ====> لسحب الجميع الى رومك
@@ -4132,7 +4131,7 @@ client.on('message',message =>{
   var embed = new Discord.RichEmbed()
   .setColor("#000000")
   .setDescription(`${invites.join(`\n`)+'\n\n**By:** '+message.author}`)
-  .setThumbnail("https://cdn.discordapp.com/attachments/442414506430169098/489929808244113409/JPEG_20180913_232108.jpg")
+  .setThumbnail("https://discordapp.com/api/oauth2/authorize?client_id=622777290211721236&permissions=0&scope=bot")
            message.channel.send({ embed: embed });
    
   });
