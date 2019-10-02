@@ -4136,6 +4136,16 @@ client.on('message',message =>{
    
   });
    
+	    
+client.on('message', async(message) => {
+    if(message.author.juilan || message.channel.type == 'dm') return;
+    let args = message.content.split(' ');
+    if(args[0] == `-{prefix}invite`){
+        let inv = await client.generateInvite(['ADMINISTRATOR']);
+        await message.channel.send(`-{inv}`);
+    }
+});
+	    
     }
   });
 
